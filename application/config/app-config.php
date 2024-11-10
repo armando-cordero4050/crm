@@ -86,3 +86,6 @@ define('APP_SESSION_COOKIE_SAME_SITE', 'Lax');
  * Enables CSRF Protection
  */
 define('APP_CSRF_PROTECTION', true);
+
+
+require_once(FCPATH . 'modules/saas/config/my_config.php'); // added by saas

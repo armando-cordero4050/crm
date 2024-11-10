@@ -26,6 +26,9 @@ class Authentication_model extends App_Model
     public function login($email, $password, $remember, $staff)
     {
         if ((!empty($email)) and (!empty($password))) {
+
+
+hooks()->do_action('before_login');
             $table = db_prefix() . 'contacts';
             $_id   = 'id';
             if ($staff == true) {
